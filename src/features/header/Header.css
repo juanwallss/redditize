@@ -1,0 +1,54 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    width: 100%;
+}
+
+body {
+    width: 100%;
+    text-align: center;
+}
+
+header {
+    width: 100%;
+    border-bottom: 3px solid purple;
+    display: grid;
+    grid-template: 1fr / repeat(12, 1fr);
+    justify-items: center;
+    align-items: center;
+}
+
+.logo {
+    grid-area: 1 / 1 / 1 / span 3;
+    color: purple;
+    width: 100%;
+}
+
+.searchBar {
+    grid-area: 1 / 4 / 1 / span 9;
+    width: 100%;
+    justify-self: start;
+    padding: 2rem 0;
+}
+
+.search {
+    margin-right: 1rem;
+    width: 50%;
+    height: 3rem;
+    border: 3px solid purple;
+    border-radius: 20px;
+    padding: 0 1rem;
+}
+
+.submit {
+    padding: .8rem;
+    background-color: white;
+    border: 3px solid purple;;
+    border-radius: 20px;
+}
+
